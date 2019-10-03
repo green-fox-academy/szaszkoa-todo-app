@@ -8,6 +8,7 @@ import { print_usage } from './functions/print_usage';
 import { list_task } from './functions/list_tasks';
 import { add_new_task } from './functions/add_new_task';
 import { remove_task } from './functions/remove_task';
+import { complete } from './functions/complete_task';
 
 let controlMethods = () => {
 
@@ -21,6 +22,8 @@ let controlMethods = () => {
     add_new_task();
   } else if (args[2] == '-r') {
     remove_task();
+  } else if (args[2] == '-c') {
+    complete();
   }
 
 }
